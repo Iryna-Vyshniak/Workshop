@@ -1,4 +1,5 @@
-// 3D scroll
+// 3D SCROLL
+
 // zSpacing - distance from card to text on z-axis
 // lastPos - all elements have animation on start position, when preload page
 // mainFrames - main parent element - frame;
@@ -32,8 +33,7 @@ window.onscroll = function () {
 
 window.scrollTo(0, 1);
 
-// audio
-
+// AUDIO
 const soundButton = document.querySelector('.soundbutton');
 const audio = document.querySelector('.audio');
 
@@ -42,10 +42,12 @@ soundButton.addEventListener('click', e => {
   audio.paused ? audio.play() : audio.pause();
 });
 
+// when focusing on this an open page in the browser
 window.onfocus = function () {
   soundButton.classList.contains('paused') ? audio.pause() : audio.play();
 };
 
+//when we open a new tab in the browser - the audio is turned off
 window.onblur = function () {
   audio.pause();
 };
