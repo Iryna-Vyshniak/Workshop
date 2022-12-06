@@ -6,6 +6,7 @@ body {
     color: $primary-color;
     font-family: raleway_c, sans-serif;
     font-size: calc($index * .8); // responsive fz
+    font-weight: 300;
     line-height: 1.75;
 }
 
