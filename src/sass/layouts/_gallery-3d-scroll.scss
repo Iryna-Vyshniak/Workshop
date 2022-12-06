@@ -24,3 +24,40 @@
     will-change: transform; // the browser must use more hardware resources, so page will haven`t freeze
     transform-style: preserve-3d; // for clear text
 }
+
+.frame__title {
+    width: min-content;
+    text-align: center;
+    font-size: calc($index * 3.3);
+    line-height: 1;
+}
+
+// frame--bg - next frame won`t see clear
+.frame--bg {
+    background-color: rgb(0 0 0 / .87);
+}
+
+.frame__subtitle {
+    margin-bottom: 3vh;
+
+    width: min-content;
+    font-size: calc($index * 3);
+    line-height: 1;
+}
+
+.frame__text {
+    max-width: 30vw;
+}
+
+.soundbutton {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    cursor: pointer;
+    width: 24px;
+    transition: .25s ease;
+}
+
+.soundbutton.paused {
+    opacity: .25;
+}
