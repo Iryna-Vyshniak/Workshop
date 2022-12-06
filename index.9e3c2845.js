@@ -1,0 +1,2 @@
+!function(){var t=-1e3,o=-200,n=document.getElementsByClassName("gallery__frame"),a=Array.from(n),c=[];window.onscroll=function(){var n=document.documentElement.scrollTop,e=o-n;o=n,a.forEach((function(o,n){c.push(n*t+t),c[n]+=-5.5*e;var r=a[n],l="translateZ(".concat(c[n],"px)"),s=c[n]<Math.abs(t)/1.8?1:0;r.setAttribute("style","transform: ".concat(l,"; opacity: ").concat(s))}))},window.scrollTo(0,1)}();
+//# sourceMappingURL=index.9e3c2845.js.map
