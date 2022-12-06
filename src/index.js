@@ -8,13 +8,13 @@
 
 let zSpacing = -1000;
 let lastPos = zSpacing / 5;
-mainFrames = document.getElementsByClassName('gallery__frame');
-frames = Array.from(mainFrames);
-zVals = [];
+let mainFrames = document.getElementsByClassName('gallery__frame');
+let frames = Array.from(mainFrames);
+let zVals = [];
 
 window.onscroll = function () {
   let top = document.documentElement.scrollTop;
-  delta = lastPos - top;
+  let delta = lastPos - top;
   lastPos = top;
 
   frames.forEach((currentElement, i) => {
