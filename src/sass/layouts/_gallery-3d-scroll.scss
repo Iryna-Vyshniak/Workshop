@@ -20,5 +20,7 @@
     align-items: center;
     justify-content: center;
 
-    transition: opacity 750ms ease;
+    transition: $transition, opacity 750ms ease;
+    will-change: transform; // the browser must use more hardware resources, so page will haven`t freeze
+    transform-style: preserve-3d; // for clear text
 }
