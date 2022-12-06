@@ -1,10 +1,18 @@
 body {
-    position: relative;
-    min-height: 100vh;
+    // position: relative;
+    // min-height: 100vh;
 
     background-color: $primary-bg-color;
     color: $primary-color;
     font-family: raleway_c, sans-serif;
-    font-size: calc($index * .8);
+    font-size: calc($index * .8); // responsive fz
     line-height: 1.75;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
