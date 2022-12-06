@@ -1,7 +1,8 @@
 // utils
-@import './utils/common';
+@import './utils/normalize';
 @import './utils/fonts';
-@import './utils/vars';
 @import './utils/mixin';
+@import './utils/vars';
+@import './utils/common';
 // layouts
 @import './layouts/gallery-3d-scroll';

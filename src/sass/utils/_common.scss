@@ -1,1 +1,10 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
+body {
+    position: relative;
+    min-height: 100vh;
+
+    background-color: $primary-bg-color;
+    color: $primary-color;
+    font-family: raleway_c, sans-serif;
+    font-size: calc($index * .8);
+    line-height: 1.75;
+}
