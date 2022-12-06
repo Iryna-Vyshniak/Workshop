@@ -1,3 +1,6 @@
 // gallery-3d-scroll
 // responsive index for size
 $index: calc(1vw + 1vh); // index for viewport aspect ratio
+$gutter: 30px; // distance between cards (inside)
+$size-small: 26; // card aspect ratio, relative value
+$size-big: 36; // card aspect ratio,  relative value
