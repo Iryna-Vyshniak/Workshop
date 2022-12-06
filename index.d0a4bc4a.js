@@ -1,2 +1,0 @@
-let e=-200,t=document.getElementsByClassName("gallery__frame"),l=Array.from(t),o=[];window.onscroll=function(){let t=document.documentElement.scrollTop,r=e-t;e=t,l.forEach(((e,t)=>{o.push(-1e3*t-1e3),o[t]+=-5.5*r;let a=l[t],n=`translateZ(${o[t]}px)`,s=o[t]<Math.abs(-1e3)/1.8?1:0;a.setAttribute("style",`transform: ${n}; opacity: ${s}`)}))},window.scrollTo(0,1);
-//# sourceMappingURL=index.d0a4bc4a.js.map
