@@ -1,2 +1,6 @@
-@import './common';
-@import './gallery-3d-scroll';
+// utils
+@import './utils/common';
+@import './utils/vars';
+@import './utils/mixin';
+// layouts
+@import './layouts/gallery-3d-scroll';
