@@ -4,5 +4,8 @@
 @import './utils/mixin';
 @import './utils/vars';
 @import './utils/common';
+// components
+@import './components/frame__media';
+@import './components/frame__content';
 // layouts
 @import './layouts/gallery-3d-scroll';

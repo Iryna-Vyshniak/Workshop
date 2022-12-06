@@ -6,28 +6,46 @@
 // -5.5 - swipe speed
 // i - indexCurrentElement
 
-let zSpacing = -1000;
+const zSpacing = -1000;
 let lastPos = zSpacing / 5;
-let mainFrames = document.getElementsByClassName('gallery__frame');
-let frames = Array.from(mainFrames);
+const mainFrames = document.getElementsByClassName('gallery__frame');
+const frames = Array.from(mainFrames);
 let zVals = [];
 
 window.onscroll = function () {
-  let top = document.documentElement.scrollTop;
-  let delta = lastPos - top;
+  const top = document.documentElement.scrollTop;
+  const delta = lastPos - top;
   lastPos = top;
 
   frames.forEach((currentElement, i) => {
     zVals.push(i * zSpacing + zSpacing);
     zVals[i] += delta * -5.5;
 
-    let frame = frames[i];
+    const frame = frames[i];
 
-    let transform = `translateZ(${zVals[i]}px)`;
-    let opacity = zVals[i] < Math.abs(zSpacing) / 1.8 ? 1 : 0;
+    const transform = `translateZ(${zVals[i]}px)`;
+    const opacity = zVals[i] < Math.abs(zSpacing) / 1.8 ? 1 : 0;
 
     frame.setAttribute('style', `transform: ${transform}; opacity: ${opacity}`);
   });
 };
 
 window.scrollTo(0, 1);
+
+// audio
+
+const soundButton = document.querySelector('.soundbutton');
+const audio = document.querySelector('.audio');
+
+soundButton.addEventListener('click', e => {
+  soundButton.classList.toggle('paused');
+  audio.paused ? audio.play() : audio.pause();
+});
+
+window.onfocus = function () {
+  soundButton.classList.contains('paused') ? audio.pause() : audio.play();
+};
+
+window.onblur = function () {
+  audio.pause();
+};

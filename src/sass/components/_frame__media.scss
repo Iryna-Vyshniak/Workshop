@@ -1,0 +1,30 @@
+.frame__media {
+    position: relative;
+    width: calc($index * $side-small);
+    height: calc($index * $side-big);
+    background-position: center;
+    background-size: cover;
+}
+
+.frame__media--left {
+    right: calc($side-small / 2 * $index + $gutter); // center on half card
+
+}
+
+.frame__media--right {
+    left: calc($side-small / 2 * $index + $gutter); // center on half card
+
+}
+
+.frame__media--video {
+    width: calc($index * $side-big);
+    height: calc($index * $side-small);
+}
+
+.frame__media--right.frame__media--video {
+    left: calc($side-big / 2 * $index + $gutter); // center on half card
+}
+
+.frame__media--left.frame__media--video {
+    right: calc($side-big / 2 * $index + $gutter); // center on half card
+}
