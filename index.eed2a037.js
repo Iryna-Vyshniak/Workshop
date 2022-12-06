@@ -1,0 +1,2 @@
+!function(){var a=-1e3,t=-200;$frames=document.getElementsByClassName("gallery__frame"),frames=Array.from($frames),zVals=[],window.onscroll=function(){var e=document.documentElement.scrollTop;delta=t-e,t=e,frames.forEach((function(t,e){zVals.push(e*a+a),zVals[e]+=-5.5*delta;var s=frames[e],o="translateZ(".concat(zVals[e],"px)"),r=zVals[e]<Math.abs(a)/1.8?1:0;s.setAttribute("style","transform: ".concat(o,"; opacity: ").concat(r))}))},window.scrollTo(0,1)}();
+//# sourceMappingURL=index.eed2a037.js.map
