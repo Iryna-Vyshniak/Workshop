@@ -1,9 +1,17 @@
 .frame__content--right > * {
     position: relative;
     left: 20vw;
+
+    @include min-max-mobile {
+        left: 25vw;
+    }
 }
 
 .frame__content--left > * {
     position: relative;
     right: 20vw;
+
+    @include min-max-mobile {
+        right: 25vw;
+    }
 }
