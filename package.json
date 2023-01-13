@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://Iryna-Vyshniak.github.io/workshop",
+  "homepage": "https://Iryna-Vyshniak.github.io/Workshop",
   "scripts": {
     "start": "parcel src/*.html -p 1122 --open",
-    "build": "parcel build src/*.html --public-url /workshop/"
+    "build": "parcel build src/*.html --public-url /Workshop/"
   },
   "repository": {
     "type": "git",
